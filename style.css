@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+.title {
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-nav {
+
+}
+
+.main {
+    width: 85%;
+    height: auto;
+    margin-top: -100vh;
+    margin-left: 15%;
+    /*position: absolute;*/
+}
+
+.side-nav {
+    height: 100vh;
+    width: 15%;
+    position: sticky;
+    top: 0;
+    /*display: inline-block;*/
+}
+
+.content {
+    width: auto;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+}
+
+.section {
+    padding: 200px;
+}
