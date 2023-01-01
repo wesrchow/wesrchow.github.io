@@ -1,3 +1,4 @@
+/* page setup */
 html, body {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@ body {
     position: relative;
 }
 
+/* title area */
 .title {
     height: 100vh;
 
@@ -20,6 +22,7 @@ body {
 
 }
 
+/* general main */
 .main {
     width: 85%;
     height: auto;
@@ -43,5 +46,58 @@ body {
 }
 
 .section {
-    padding: 200px;
+    padding: 20px;
+}
+
+/* profiles */
+.profiles {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.profile-col {
+    flex: 1;
+}
+
+.profile-col a {
+    width: min-content;
+}
+
+.profile-row {
+    width: fit-content;
+    margin: 0;
+}
+
+.profile-row img {
+    height: 30px;
+    width: 30px;
+}
+
+.profile-row h4 {
+    display: inline-block;
+}
+
+/* projects */
+ul { /* for courses as well */
+    padding: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    align-items: center;
+}
+
+li { /* for courses as well */
+    list-style: none;
+    flex: 0 0 33.333333%
+}
+
+.project-box {
+
+    background-color: aliceblue;
+}
+
+/* courses */
+.course-box {
+    background-color: aliceblue;
 }
