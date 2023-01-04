@@ -1,14 +1,24 @@
-/* page setup */
+/*
+    page setup
+*/
 html, body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+
+    background-color: #f7f7f7;
+    color: #080808;
+
+    font-family: "Lato", sans-serif;
 }
 
 body {
     position: relative;
 }
 
-/* title area */
+/*
+    title area
+*/
 .title {
     height: 100vh;
 
@@ -18,15 +28,59 @@ body {
     align-items: center;
 }
 
-.title-nav {
-
+h1 {
+    font-size: 800%;
+    margin-block: 0.2em 0.2em;
 }
 
-/* general main */
+.title h3 {
+    font-size: 200%;
+    margin-block: 0.2em 0.2em;
+}
+
+.title-nav {
+    width: 80%;
+
+    position: relative;
+    top: 18%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.title-nav a, .title-nav a:visited, .title-nav a:active {
+    /*margin: 0 6%;*/
+
+    font-weight: bold;
+    text-decoration: none;
+    /*color: inherit;*/
+    font-size: 200%;
+}
+
+.title-nav .about-me, .side-nav .about-me {
+    color: rgb(0, 117, 187);
+}
+
+.title-nav .profiles { /* TODO add the rest of colours? */
+    color: #9a0000;
+}
+
+.title-nav .projects {
+    color: #53a900;
+}
+
+.title-nav .courses {
+    color: purple;
+}
+
+/*
+    general main
+*/
 .main {
     width: 85%;
     height: auto;
-    margin-top: -100vh;
+    /*margin-top: -100vh;*/
     margin-left: 15%;
     /*position: absolute;*/
 }
@@ -34,9 +88,22 @@ body {
 .side-nav {
     height: 100vh;
     width: 15%;
-    position: sticky;
+    position: fixed;
     top: 0;
-    /*display: inline-block;*/
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.side-nav a, .side-nav a:visited, .side-nav a:active {
+    width: fit-content;
+    margin: 15% 7%;
+
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    font-size: 200%;
 }
 
 .content {
@@ -46,11 +113,33 @@ body {
 }
 
 .section {
-    padding: 20px;
+    padding: 3% 2%;
 }
 
-/* profiles */
+.section h2 {
+    font-size: 350%;
+}
+
+.about-me {
+
+}
+
 .profiles {
+
+}
+
+.projects {
+
+}
+
+.courses {
+
+}
+
+/*
+    profiles
+*/
+.profile-grid {
     display: flex;
     flex-flow: row nowrap;
 }
@@ -71,13 +160,16 @@ body {
 .profile-row img {
     height: 30px;
     width: 30px;
+    display: inline-block;
 }
 
 .profile-row h4 {
     display: inline-block;
 }
 
-/* projects */
+/*
+    projects
+*/
 ul { /* for courses as well */
     padding: 0;
 
@@ -89,15 +181,25 @@ ul { /* for courses as well */
 
 li { /* for courses as well */
     list-style: none;
-    flex: 0 0 33.333333%
+    flex: 1 0 30%/*0 0 33.333333%*/;
+
+
 }
 
 .project-box {
 
+    border: 3px solid #080808;
+    border-radius: 10px;
     background-color: aliceblue;
 }
 
-/* courses */
+.project-box img {
+    width: 100%;
+}
+
+/*
+    courses
+*/
 .course-box {
     background-color: aliceblue;
 }
